@@ -96,14 +96,14 @@ function GameScreen({ userNumber, onGameOver }) {
 
   if (width > 500) {
     content = (
-      <>
+      <>  
         <View style={styles.buttonsContainerWide}>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, "lower")}>
               <Ionicons name="md-remove" size={24} color="white" />
             </PrimaryButton>
           </View>
-          <NumberContainer>{currentGuess}</NumberContainer>;
+          <NumberContainer>{currentGuess}</NumberContainer>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, "greater")}>
               <Ionicons name="md-add" size={24} color="white" />
@@ -118,7 +118,7 @@ function GameScreen({ userNumber, onGameOver }) {
     <View style={styles.screen}>
       <Title>Opponent's Guess</Title>
       {content}
-      <View style={styles.listContainer}>      
+      <View style={styles.listContainer}>
         <FlatList
           data={guessRounds}
           renderItem={(itemData) => (

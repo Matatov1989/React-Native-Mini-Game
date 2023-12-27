@@ -6,8 +6,8 @@ import {
   ScrollView,
   useWindowDimensions,
 } from "react-native";
-import Title from "../components/ui/Title";
-import Colors from "../constants/colors";
+import Title from "../components/ui/Title.android";
+import Colors from "../constants/colors.android";
 import PrimaryButton from "../components/ui/PrimaryButton";
 
 function GameOverScreen({ roundsNumber, userNumber, onStartNewGame }) {

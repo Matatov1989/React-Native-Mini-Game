@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 34,
+    alignItems: "center"
   },
   instractionText: {
     marginBottom: 12,
